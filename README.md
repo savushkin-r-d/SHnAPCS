@@ -15,12 +15,20 @@ flowchart LR
   B2[Браузер] --> N
   N --> A1[Web-сервер]
   N --> A2[Web-сервер]
-  A1 --> C[Шина]
-  A2 --> C  
-  C --> P[(Postgres SCADA DB)]
-  C --> R[(Redis in-memory DB)]
-  C --> E[EasyServer]
-  
+  A1 --> Шина
+  A2 --> Шина
+  Шина --> P[(Postgres SCADA DB)]
+  Шина --> R[(Redis in-memory DB)]
+  Шина --> E1[EasyServer]
+  Шина --> E2[EasyServer]
+  Шина --> O[Сервер отчетов]
+  Шина --> L[Сервер логирования]
+
+subgraph Шина
+  direction LR
+  S[Sockets]
+  K[Kafka]
+end
 
 
 ```
