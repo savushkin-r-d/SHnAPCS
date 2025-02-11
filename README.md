@@ -1,5 +1,5 @@
-# SnAPCS
-Savushkin new automated process control system
+# SHnAPCS
+Software and hardware new automated process control system
 
 # Архитектурные требования к компонентам системы:
 * сервер для работы с контроллером (на начальном этапе на базе EasyServer)
