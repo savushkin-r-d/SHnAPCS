@@ -19,19 +19,37 @@ flowchart LR
   end
   A1 --> Шина
   A2 --> Шина
-  Шина --> P[(Postgres SCADA DB)]
-  Шина --> R[(Redis in-memory DB)]
-  Шина --> E1[EasyServer]
-  Шина --> E2[EasyServer]
-  Шина --> O[Сервер отчетов]
-  Шина --> L[Сервер логирования]
 
-subgraph Шина
-  direction LR
-  S[OPC]
-  K[Kafka]
-end
+  subgraph Шина
+    direction LR
+    S[OPC]
+    K[Kafka]
+  end
 
+  Шина --> P
+  Шина --> R
+  Шина --> E1
+  Шина --> E2
+  Шина --> O
+  Шина --> L
+
+  subgraph Сервисные сервера
+    direction LR
+    O[Сервер отчетов]
+    L[Сервер логирования]
+  end
+
+  subgraph Базы данных
+    direction LR
+    P[(Postgres SCADA)]
+    R[(Redis in-memory)]
+  end
+
+  subgraph Сервера контроллеров
+    direction LR
+    E1[EasyServer]
+    E2[EasyServer]
+  end
 
 ```
 
