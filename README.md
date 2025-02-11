@@ -48,8 +48,16 @@ flowchart LR
 
   subgraph Сервера контроллеров
     direction LR
-    E1[EasyServer]
+    E1[EasyServer] 
     E2[EasyServer]
+    C1[Controller1]
+    C2[Controller2]
+    C3[Controller3]
+    C4[Controller4]
+    E1 --> C1
+    E1 --> C2
+    E2 --> C3
+    E2 --> C4
   end
 
 ```
