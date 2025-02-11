@@ -13,8 +13,10 @@ Software and hardware new automated process control system
 flowchart LR
   B1[Браузер] --> N[Nginx]
   B2[Браузер] --> N
+  subgraph Web-кластер
   N --> A1[Web-сервер]
   N --> A2[Web-сервер]
+  end
   A1 --> Шина
   A2 --> Шина
   Шина --> P[(Postgres SCADA DB)]
@@ -26,7 +28,7 @@ flowchart LR
 
 subgraph Шина
   direction LR
-  S[Sockets]
+  S[OPC]
   K[Kafka]
 end
 
