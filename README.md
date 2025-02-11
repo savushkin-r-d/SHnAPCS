@@ -1,5 +1,5 @@
 # SHNAPCS
-software and hardware new automated process control systems
+Software and hardware new automated process control system
 
 # Архитектурные требования к компонентам системы:
 * сервер для работы с контроллером (на начальном этапе на базе EasyServer)
@@ -28,4 +28,13 @@ software and hardware new automated process control systems
 * авторизация, уровень доступа, администрирование
 * возможность сравнения изменений в проектах
 * CI/CD, тестирование и быстрое развертывание проектов
-  
+
+# Примеры open-source систем:
+* FUXA (https://frangoteam.org/) 
+* json-scada (https://github.com/riclolsen/json-scada) 
+* https://github.com/SCADA-LTS/Scada-LTS 
+* https://rapidscada.org/download-all-files/ https://github.com/RapidScada/scada-v6 
+* https://github.com/GavinYellow/SharpSCADA 
+* https://github.com/riclolsen/OSHMI
+
+
