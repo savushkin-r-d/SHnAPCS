@@ -24,6 +24,7 @@ flowchart LR
     direction LR
     S[OPC]
     K[Kafka]
+    ODBC[ODBC]
   end
 
   Шина --> P
