@@ -9,6 +9,22 @@ Software and hardware new automated process control system
 * сервер отчетов
 * сервер логирования
 
+```mermaid
+flowchart LR
+  B1[Браузер] --> N[Nginx]
+  B2[Браузер] --> N
+  N --> A1[Web-сервер]
+  N --> A2[Web-сервер]
+  A1 --> C[Шина]
+  A2 --> C  
+  C --> P[(Postgres SCADA DB)]
+  C --> R[(Redis in-memory DB)]
+  C --> E[EasyServer]
+  
+
+
+```
+
 # Функциональные требования:
 * поддержка faceplate для объектов
 * наследование объектов
