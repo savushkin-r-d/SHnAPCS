@@ -1,5 +1,5 @@
 # SHnAPCS
-Software and hardware new automated process control system
+**Software and Hardware new Automated Process Control System**
 
 [Функциональные требования](fun.md)
 
